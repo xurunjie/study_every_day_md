@@ -46,7 +46,7 @@
 >
 > ##### 删除索引  DELETE /test_index
 >
-> ![](C:.\images\Snipaste_2019-06-03_16-55-28.png)
+> ![](.\images\Snipaste_2019-06-03_16-55-28.png)
 >
 > 
 
@@ -60,7 +60,7 @@
 >   "age":1
 > }
 >
-> ![](C:.\images\Snipaste_2019-06-03_17-00-52.png)
+> ![](.\images\Snipaste_2019-06-03_17-00-52.png)
 >
 > ##### 不指定id创建
 >
@@ -1057,7 +1057,7 @@ GET test_index
 ```
 ~~~
 
-  - ​
+  - 
 
 ##### `日期的自动识别`
 
@@ -1369,7 +1369,7 @@ PUT text_index
                   }
                 }
               }
-
+    
               GET test_search_index/_search
               {
                 "query": {
@@ -1571,7 +1571,7 @@ PUT text_index
                   # idf计算 ---------->逆向文档频率
                   # t.getBoost() ------------> 是否对term进行过相应的甲醛
                   # norm -----> Filed Length Norm计算
-
+    
                   """词频越高  tf  idf频率越小   Filed Length Norm计算  得分越高"""
                   ```
     
@@ -1591,7 +1591,7 @@ PUT text_index
                         }
                       }
                     }
-
+    
                     PUT test_search_index
                     {
                       "settings": {
@@ -1765,10 +1765,13 @@ PUT text_index
 
 - `文档document1`最终存储在`分片p1`上
   - `文档document1`是如何存储到`分片p1`上的?选择p1的依据是什么
+    
     - 需要`文档`到`分片`的映射算法
   - 目的
+    
     - 使得文档`均匀分布`在`所有分片`上,以充分`利用资源`
-  - 算法
+  
+- 算法
     - 随机选择或者`round-robin`算法? ------------  `可以实现均匀分布的目标`
 
     - 不可取,因为需要`维护文档`到`分片`的`映射`关系,成本巨大
@@ -1778,33 +1781,134 @@ PUT text_index
     - 根据`文档值`实时计算对应的`分片`
 
     - `es`通过如下的公式计算稳定对应的分片
-
+    
       - shard = hash(`routing`)%`number_of_primary_shards`
       - `hash`算法保证可以将数据均匀的分散在`分片`中
-      - `routing`是一个关键`参数`,默认是`文档id`,也可以`自行指定`
-      - `number_of_primary_shards` 主分片数
-
-    - 该算法与主分片数有关,这也是`分片数一旦确定后便不能更改`的原因了
-
-    - `脑裂问题`,`split brain`,是分部式系统中的经典网络问题
-
-      - `出现脑裂问题`
-
-      - 出现点
-
-        - 1：网络原因
-
+    - `routing`是一个关键`参数`,默认是`文档id`,也可以`自行指定`
+      
+- `number_of_primary_shards` 主分片数
+      
+- 该算法与主分片数有关,这也是`分片数一旦确定后便不能更改`的原因了
+    
+- `脑裂问题`,`split brain`,是分部式系统中的经典网络问题
+    
+  - `出现脑裂问题`
+    
+    - ```tex
+  现有node1，node2，node3做了集群，node1为主集群
+        node1出现网络问题连不上了
+  node2和node3通过分配机制分配node2为主集群，更新了cluster status
+        现在node1网络恢复了
+  现在有两个master无法恢复成正常现象
+        解决方案
+  	  ```
+    -	仅在科选举master-eligible节点数等于quorum时才可以进行master选举
+  	    	
+        	-	quorum = master-eligible 节点数/2+1，例如3个master-eligible节点时，quorum为2   quorum->法定人数
+    - 设定discovery.zen.minimum_master_nodes为quorum即可避免脑裂
+  
+    - 出现点
+      
+      - 1：网络原因
+        
           - 内网一般不会出现此问题，可以监控内网流量状态。外网的网络出现问题的可能性大些。
-
+        
         - 2：节点负载
-
+        
           - 主节点即负责管理集群又要存储数据，当访问量大时可能会导致es实例反应不过来而停止响应，此时其他节点在向主节点发送消息时得不到主节点的响应就会认为主节点挂了，从而重新选择主节点
-
+        
         - 3：回收内存
-
+        
           -  大规模回收内存时也会导致es集群失去响应。
-
+        
             所以内网负载的可能性大，外网网络的可能性大。
+        
+        
+    - `倒排索引的不可变更`
+    
+      - 倒排索引一旦生成不能变更
+      
+      - 其`优点`：
+      
+        - `不用考虑` `并发`写文件的问题，`杜绝锁机制`带来的`性能`问题
+        - 由于`文件不能更改`，可以充分利用文件`系统缓存`，只需载入一次，只要内存够用，对该文件的读取都会从`内存`中走，性能`高`
+        - 利于生成`缓存数据`
+        - 利于将文件执行压缩存储，`节约磁盘空间`和`内存存储空间`
+      
+      - 其`弊端`:
+      
+        - 坏处是需要写入`新文档`时，必须重新`构建倒排索引`文件，然后替换掉`老文件新文档`才会被检索，导致文档的`实时性差`
+      
+        ![](./images/Snipaste_2019-06-18_23-21-35.png)
+      
+      - `文档搜索实时性`解决方案
+      
+        - `新文档`直接生成`新的倒排索引文件`,`查询`的时候同时查询所有的`倒排文件`，然后做结果的`汇总计算`
+        - ![](./images/Snipaste_2019-06-18_23-29-09.png)
+        - `Lucence` 便是采用这种方式，构建的单个倒排索引`segment`合在一起称为`index`,与`es`中的`index`概念不同，`es`中的`Shard`对应着一个`lucence Index`
+        - `lucence`会有一个单独的文件记录所有的`segement`信息，俗称`commit point`
+        - segment写入磁盘很耗时，可以借助文件系统缓存的特性，先将segment写入缓存中创建并开放查询来提高实时性，该过程在es中为refresh
+        - 在refresh之前文档会存在一个buffer对象中，refresh时将buffer中的文档清空并生成segment
+        - es默认每1s会去执行一次refresh，因此文档的实时性被提高到1s，这也是es被称为近实时的原因
+        - ![](/Users/xurunjie/Desktop/study_every_day_md/es/images/Snipaste_2019-06-18_23-45-49.png)
+        - 现在有个问题
+          - 综上es把数据存入文件缓存中，机器宕机未同步，如何解决
+          - 解决内存中segment还没有写入磁盘前宕机问题，纳闷其中的文档无法恢复问题
+            - es引入translog机制，写入文档到buffer中，同时将该操作写入translog
+            - translog文件会即时写入磁盘（fsync），6.x每个请求都会落盘，可以修改每5s写一次，这样风险便是丢失5s内的数据，相关配置，index.translog.*
+            - es启动时会从检查translog文件，并从中恢复数据
+        - ![](./images/Snipaste_2019-06-18_23-56-24.png)
+        - flush负责内存中的segment写入到磁盘，主要如下的工作：
+          - 将translog写入磁盘
+          - 将index buffer清空，其中的文档生成一个新的segment，相当于一个refresh操作
+          - 更新commit point 并写入磁盘
+          - 执行fsync操作，将内存中的segment写入磁盘
+          - 删除旧的translog文件
+          - ![](./images/Snipaste_2019-06-19_00-04-19.png)
+        - refresh发生的时间主要有以下三个情况
+          - 间隔时间达到时，默认为1s，我们可以修改index.settings.refresh_interval来设定
+          - index.buffe占满时，其大小可通过indices.memeory.index_buffer_size设置，默认为jvm heap的10%，所有的shard共享的
+          - flush发生时也会refresh
+        - flush发生的时机
+          - 间隔时间达到，默认是30分钟，5.x之前可以通过index.translog.flush_threshold_peried修改，之后无法修改
+          - translog占满时，其大小可以通过index.translog.flush_threshold_size控制，默认512mb，每个index都有自己的translog
+        - 删除和更新文档
+          - segment一旦生成就不能修改，那么你要删除文档该怎么操作
+            - lucence专门维护了一个.del的文件，记录所有删除的文档，注意.del上记录的是文档在lucence内部的id
+            - 在查询结果返回前会过滤掉.del的所有文档
+          - 更新文档怎么执行
+            - 首先删除文档再创建新文档
+        - `es index`和`lucence`的比较
+          - ![](./images/Snipaste_2019-06-19_00-20-01.png)
+        - segment merge
+          - 随着segment的增多，由于一次查询的segment的增多，查询速度会变慢
+          - es会定时在后台进行segment merge的操作，减少segment的数量
+          - 通过fore_merge api可以手动强制做segment merge的操作
 
-        ​
+------
 
+### 深入了解search的运行机制
+
+- search的运行机制
+  - Query阶段
+  - Fetch阶段
+- Query-Then-Fetch阶段
+  - 场景集群环境node1，node2，node3
+  - node3在接收用户的search请求后，会先进行query阶段（此时Coodinating Node角色）
+    - node3会在6个主副分片中随机选择三个分片，发送search request
+    - 被选中的三个分片会分别执行查询并排序，返回from+size个文档Id和排序值
+    - node3整合三个分片返回from+size个文档Id，根据排序值选取from到from+size的文档Id
+    - query阶段
+    - ![](./images/Snipaste_2019-06-19_01-03-36.png)
+    - fetch阶段
+    - node3更具query阶段获取的文档id列表去对应的shard上获取文档详情信息
+    - Node3向相关的分片上发送multi_get请求
+    - 3个分片返回文档的详细信息
+    - node3拼接返回的结果返回给客户
+    - ![](./images/Snipaste_2019-06-19_01-16-57.png)
+
+#### 相关性算分的问题
+
+- 相关性算分在shard和shard间是相互独立的，也就意味着同一个Term的IDF等值在不同的IDF上是不同的。文档的相关性的分和它所处的shard相关
+- 在文档数量不多时，会导致相关性算分严重不准的情况发生
+- 

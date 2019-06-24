@@ -297,5 +297,15 @@
 - 线上环境建议使用配置文件来配置`logstash`去配置相关配置,这样可以减少犯错的机会,而且文件便于进行版本化管理
 - 命令行形式多采用进行快速配置`测试,验证,检查`等
 
+## 实例
 
+### 调试阶段
 
+- `http`做`input`,方便输入测试数据,并且可以结合`reload`特性(`stdin`无法 `reload`)
+- `stdout`做`output`,`codec`作为`rubydebug`,即时查看解析结果
+- 测试错误输入情况下的输出,以便对错误情况进行处理
+- ![](/Users/xurunjie/Desktop/study_every_day_md/es/images/Snipaste_2019-06-23_23-15-04.png)
+- `@metadata`特殊字段,其内容不会输出到`output`之中
+  - 适合用来存储当条件判断、临时存储的字段
+  - 相比` remove_field`有一定的性能提升
+  - ![](./images/Snipaste_2019-06-23_23-19-07.png)

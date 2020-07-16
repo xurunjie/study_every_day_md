@@ -12,28 +12,53 @@ public class SingleLinkedListDemo {
 //        linkedList.addHero(hero3);
 //        linkedList.addHero(hero4);
 //        linkedList.show();
+//        System.out.println(linkedList.getHead());
 
         linkedList.addByOrder(hero1);
         linkedList.addByOrder(hero4);
         linkedList.addByOrder(hero2);
         linkedList.addByOrder(hero3);
+//        linkedList.show();
+        // 反转
+        reverseList(linkedList.getHead());
         linkedList.show();
+//        HeroNode heroNode = new HeroNode(2, "王月", "小傻瓜");
+//        linkedList.update(heroNode);
+//        linkedList.show();
+//
+//        linkedList.delete(heroNode);
+//        linkedList.show();
+//
+//        int length = getLength(linkedList.getHead());
+//        System.out.println(length);
+//
+//        heroNode = findLastNode(linkedList.getHead(), 1);
+//        System.out.println(heroNode);
 
-        HeroNode heroNode = new HeroNode(2, "王月", "小傻瓜");
-        linkedList.update(heroNode);
-        linkedList.show();
 
-        linkedList.delete(heroNode);
-        linkedList.show();
-
-        int length = getLength(linkedList.getHead());
-        System.out.println(length);
-
-        heroNode = findLastNode(linkedList.getHead(), 1);
-        System.out.println(heroNode);
 
     }
 
+    private static void reverseList(HeroNode heroNode) {
+        /**
+         * 1. 判断链是否为空，或者为1 不反转
+         * 2. 定义一个辅助执政指向第一个 节点
+         * 3. 定义一个新的初始节点记录 让初始节点指向当前节点
+         */
+        if (heroNode.getNext() == null || heroNode.getNext().getNext() == null) {
+            return;
+        }
+        HeroNode cur = heroNode.getNext();
+        HeroNode next = null;
+        HeroNode reverserNode = new HeroNode(0, "", "");
+        while (cur != null) {
+            next = cur.getNext();
+            cur.setNext(reverserNode.getNext());
+            reverserNode.setNext(cur);
+            cur = next;
+        }
+        heroNode.setNext(reverserNode.getNext());
+    }
 
     private static int getLength(HeroNode head) {
         /**

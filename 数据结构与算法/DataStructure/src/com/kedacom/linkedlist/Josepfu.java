@@ -7,8 +7,9 @@ package com.kedacom.linkedlist;
 public class Josepfu {
     public static void main(String[] args) {
         CircleSingleLinkedList linkedList = new CircleSingleLinkedList();
-        linkedList.addBoy(25);
+        linkedList.addBoy(5);
         linkedList.showBoy();
+        linkedList.countBoy(1,2,5);
     }
 }
 
@@ -55,6 +56,42 @@ class CircleSingleLinkedList{
             }
             temp = temp.getNext();
         }
+    }
+
+    public void countBoy(int startId, int countNum, int nums) {
+        // 校验数据完整性
+        if (first == null || startId < 1 || startId > nums) {
+            System.out.println("数据校验错误~~");
+            return;
+        }
+
+        // 获取尾部指针
+        Boy helper = first;
+        while (true) {
+            if (helper.getNext() == first) {
+                break;
+            }
+            helper = helper.getNext();
+        }
+        // 遍历获取起始节点
+        for (int i = 0; i < startId - 1; i++) {
+            first = first.getNext();
+            helper = helper.getNext();
+        }
+        // 循环获取判断是否尾部节点和头部节点相同相同则退出循环
+        while (true) {
+            if (helper == first) {
+                break;
+            }
+            for (int i = 0; i < countNum - 1; i++) {
+                first = first.getNext();
+                helper = helper.getNext();
+            }
+            System.out.printf("小孩%d 出圈\n",first.getId());
+            first = first.getNext();
+            helper.setNext(first);
+        }
+        System.out.printf("最后一个出圈的是%d\n",first.getId());
     }
 
 }

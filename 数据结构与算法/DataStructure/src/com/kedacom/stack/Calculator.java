@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 public class Calculator {
     public static void main(String[] args) {
-        String expression = "3+2*6-2-8";
+        String expression = "300+2+6*2+4*5+6-7-8";
 
         ArrayStack2 numStack = new ArrayStack2(10);
         ArrayStack2 operStack = new ArrayStack2(10);
@@ -14,6 +14,7 @@ public class Calculator {
         int num2=0;
         int oper=0;
         int res = 0;
+        String keepNum = "";
         char ch;
         do {
             // 依次得到每次到的一个字符
@@ -35,7 +36,17 @@ public class Calculator {
                     operStack.push(ch);
                 }
             } else {
-                numStack.push(ch - 48);
+                // 当处理多位数时不能发信一个数就直接入栈
+                keepNum += ch;
+                if (index == expression.length() - 1) {
+                    numStack.push(Integer.parseInt(keepNum));
+                }else{
+                    if (operStack.isOper(expression.substring(index + 1, index + 2).charAt(0))) {
+                        numStack.push(Integer.parseInt(keepNum));
+                        keepNum = "";
+                    }
+                }
+
             }
             // index+1
             index++;

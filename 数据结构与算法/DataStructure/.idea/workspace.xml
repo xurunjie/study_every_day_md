@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8251b17e-5c4f-482a-a758-57fb1c024234" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../算法.md" afterDir="false" />
     </list>
@@ -12,30 +14,44 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-27512435">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1960" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1960" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/linkedlist/DoubleLinkedListDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/linkedlist/Josepfu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="129" column="1" selection-start-line="129" selection-start-column="1" selection-end-line="129" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/ArrayStackArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
+            <state relative-caret-position="1122">
               <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
             </state>
           </provider>
@@ -44,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
+            <state relative-caret-position="88">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
@@ -53,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/PolandNotation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3289">
+            <state relative-caret-position="3146">
               <caret line="147" selection-start-line="147" selection-end-line="147" />
             </state>
           </provider>
@@ -62,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/RecursionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="198">
               <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
             </state>
           </provider>
@@ -71,17 +87,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/MiGong.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1656">
+            <state relative-caret-position="1584">
               <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/Queue8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="418">
               <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/sparsearray/SparseArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="220">
               <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
@@ -98,7 +138,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kedacom/queue/ArrayQueueDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="462">
               <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
@@ -132,8 +172,16 @@
         <option value="$PROJECT_DIR$/src/com/kedacom/stack/PolandNotation.java" />
         <option value="$PROJECT_DIR$/src/com/kedacom/recursion/MiGong.java" />
         <option value="$PROJECT_DIR$/src/com/kedacom/recursion/Queue8.java" />
+        <option value="$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -148,10 +196,9 @@
     <option name="jreName" value="11" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1920" />
-    <option name="height" value="1056" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -160,6 +207,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,19 +250,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="recursion" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596369088073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596536864972" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -235,13 +282,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Queue8">
-    <configuration name="MiGong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.recursion.MiGong" />
+  <component name="RunManager" selected="Application.SelectSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.sort.BubbleSort" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.recursion.*" />
+          <option name="PATTERN" value="com.kedacom.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,12 +296,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolandNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.stack.PolandNotation" />
+    <configuration name="MiGong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.recursion.MiGong" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.stack.*" />
+          <option name="PATTERN" value="com.kedacom.recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -275,12 +322,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecursionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.recursion.RecursionTest" />
+    <configuration name="SelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.sort.SelectSort" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.recursion.*" />
+          <option name="PATTERN" value="com.kedacom.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,13 +350,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.MiGong" />
-      <item itemvalue="Application.PolandNotation" />
-      <item itemvalue="Application.RecursionTest" />
       <item itemvalue="Application.SparseArray" />
       <item itemvalue="Application.Queue8" />
+      <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.SelectSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectSort" />
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.Queue8" />
         <item itemvalue="Application.MiGong" />
       </list>
@@ -343,17 +392,28 @@
       <workItem from="1596260140919" duration="7021000" />
       <workItem from="1596297246556" duration="2535000" />
       <workItem from="1596457096867" duration="255000" />
+      <workItem from="1596518623294" duration="10739000" />
+      <workItem from="1596532815576" duration="1008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61867000" />
+    <option name="totallyTimeSpent" value="73614000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13432837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -363,11 +423,11 @@
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45435685" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45336226" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.6659751" />
-      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.40700808" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32968238" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -390,6 +450,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -448,71 +511,91 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/linkedlist/DoubleLinkedListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
+        <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/linkedlist/Josepfu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
+        <state relative-caret-position="2618">
           <caret line="129" column="1" selection-start-line="129" selection-start-column="1" selection-end-line="129" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/ArrayStackArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
+        <state relative-caret-position="1122">
           <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
+        <state relative-caret-position="88">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/PolandNotation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3289">
+        <state relative-caret-position="3146">
           <caret line="147" selection-start-line="147" selection-end-line="147" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/RecursionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="198">
           <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/MiGong.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
+        <state relative-caret-position="1584">
           <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/Queue8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/sparsearray/SparseArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="220">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kedacom/queue/ArrayQueueDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="462">
           <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/Queue8.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="183">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

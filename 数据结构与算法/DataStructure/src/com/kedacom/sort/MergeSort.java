@@ -2,13 +2,14 @@ package com.kedacom.sort;
 
 import java.util.Arrays;
 
+
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {34, 69, 119, 30, 80, 90, 18, 27};
+        // 把有剩余数据一边的数据一次全部填充到temp去
         int[] temp = new int[arr.length];
         mergeSorting(arr, 0, arr.length - 1 , temp);
         System.out.println(Arrays.toString(arr));
-
     }
 
     private static void mergeSorting(int[] arr, int left, int right, int[] temp) {

@@ -1,168 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8251b17e-5c4f-482a-a758-57fb1c024234" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/kedacom/search/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kedacom/search/SeqSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kedacom/sort/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kedacom/sort/RadixSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kedacom/search/FibonacciSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kedacom/search/InsertValSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/QuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../算法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/search/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/search/BinarySearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/SelectSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/sort/SelectSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kedacom/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kedacom/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kedacom/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kedacom/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-27512435">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.66" value="2" />
-          <entry key="project.opened" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="7275" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="7275" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/InsertSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" selection-start-line="8" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/MergeSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1030">
-              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/RadixSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/search/SeqSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/search/BinarySearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1488#1497#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/queue/ArrayQueueDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1210">
-              <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/queue/CircleArrayQueueDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="112" column="44" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kedacom/sparsearray/SparseArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -174,40 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+  <component name="GroovyConsoleState">
+    <option name="list">
       <list>
-        <option value="$PROJECT_DIR$/src/com/kedacom/sparsearray/SparseArray.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/queue/ArrayQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/queue/CircleArrayQueueDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/linkedlist/LinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/linkedlist/SingleLinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/linkedlist/DoubleLinkedListDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/linkedlist/Josepfu.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/stack/ArrayStackArray.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/stack/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/stack/PolandNotaion.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/stack/PolandNotation.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/recursion/MiGong.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/recursion/Queue8.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/InsertSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/ShellSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/QuickSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/MergeSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/RaditSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/sort/RadixSort.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/search/SeqSearch.java" />
-        <option value="$PROJECT_DIR$/src/com/kedacom/search/BinarySearch.java" />
+        <Entry>
+          <option name="moduleName" value="DataStructure" />
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+        </Entry>
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/kedacom/search/BinarySearch.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -222,169 +60,32 @@
     <option name="jreName" value="11" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="968" />
-    <option name="height" value="528" />
-  </component>
+  <component name="ProjectId" id="1gIvAupwGX9ekhUSgweSHmavSHZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-              <item name="ArrayQueueDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-              <item name="CircleArrayQueueDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="recursion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="sparsearray" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-              <item name="ArrayStackArray.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-              <item name="Calculator.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kedacom" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-              <item name="PolandNotation.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597652581626" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/kedacom/sort" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.BinarySearch">
+  <component name="RunManager" selected="Application.FibonacciSearch">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kedacom.search.BinarySearch" />
       <module name="DataStructure" />
@@ -398,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.sort.MergeSort" />
+    <configuration name="FibonacciSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.search.FibonacciSearch" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.sort.*" />
+          <option name="PATTERN" value="com.kedacom.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -411,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.sort.QuickSort" />
+    <configuration name="InsertValSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.search.InsertValSearch" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.sort.*" />
+          <option name="PATTERN" value="com.kedacom.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -437,8 +138,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShellSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.sort.ShellSort" />
+    <configuration name="SelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.sort.SelectSort" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
@@ -450,23 +151,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.ShellSort" />
-      <item itemvalue="Application.QuickSort" />
-      <item itemvalue="Application.MergeSort" />
-      <item itemvalue="Application.RadixSort" />
       <item itemvalue="Application.BinarySearch" />
+      <item itemvalue="Application.RadixSort" />
+      <item itemvalue="Application.SelectSort" />
+      <item itemvalue="Application.InsertValSearch" />
+      <item itemvalue="Application.FibonacciSearch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FibonacciSearch" />
+        <item itemvalue="Application.InsertValSearch" />
         <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.SelectSort" />
         <item itemvalue="Application.RadixSort" />
-        <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.ShellSort" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -506,65 +219,110 @@
       <workItem from="1597319167372" duration="594000" />
       <workItem from="1597461405228" duration="1195000" />
       <workItem from="1597630656450" duration="9589000" />
+      <workItem from="1597814789200" duration="4512000" />
+      <workItem from="1597820749714" duration="694000" />
+      <workItem from="1597821535518" duration="84000" />
+      <workItem from="1597821653431" duration="3398000" />
+      <workItem from="1597829198601" duration="1376000" />
+      <workItem from="1597886754383" duration="1003000" />
+      <workItem from="1597906432496" duration="550000" />
+      <workItem from="1597907091881" duration="77000" />
+      <workItem from="1597907197048" duration="7085000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117382000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18976545" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34273317" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3264642" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32968238" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="RNConsole" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="PlantUML" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="BPMNPalette" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Maven" order="11" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="WindowStateProjectService">
+    <state x="832" y="418" key="#Custom_Plugin_Repositories" timestamp="1597822091936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="832" y="418" key="#Custom_Plugin_Repositories/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597822091936" />
+    <state x="731" y="237" key="#HTTP_Proxy" timestamp="1597822097655">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="237" key="#HTTP_Proxy/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597822097655" />
+    <state x="529" y="311" width="900" height="580" key="#Vim_Emulation" timestamp="1597829956000">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="529" y="311" width="900" height="580" key="#Vim_Emulation/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597829956000" />
+    <state x="694" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597821677602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597821677602" />
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597821166973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597821166973" />
+    <state width="405" height="466" key="DebuggerActiveHint" timestamp="1597921013839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="405" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921013839" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1597822026802">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597822026802" />
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1597921523255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
+    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1597921523255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
+    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
+    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1597921523255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
+    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1597921523255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
+    <state width="1877" height="294" key="GridCell.Tab.1.bottom" timestamp="1597921523256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
+    <state width="1877" height="294" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104942" />
+    <state width="1877" height="294" key="GridCell.Tab.1.center" timestamp="1597921523256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
+    <state width="1877" height="294" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104942" />
+    <state width="1877" height="294" key="GridCell.Tab.1.left" timestamp="1597921523256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
+    <state width="1877" height="294" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
+    <state width="1877" height="294" key="GridCell.Tab.1.right" timestamp="1597921523256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="294" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
+    <state width="1877" height="294" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104942" />
+    <state x="540" y="254" key="IDE.errors.dialog" timestamp="1597826655103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="254" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597826655103" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1597907150523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597907150523" />
+    <state x="759" y="297" key="chooseDestDirectoryDialog" timestamp="1597821291020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597821291020" />
+    <state x="655" y="275" key="refactoring.ChangeSignatureDialog" timestamp="1597908161884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="275" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597908161884" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597913181444">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597913181444" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -572,26 +330,27 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/kedacom/recursion/MiGong.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/kedacom/recursion/MiGong.java</url>
           <line>75</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/kedacom/recursion/Queue8.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/kedacom/sort/InsertSort.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/kedacom/search/InsertValSearch.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -609,173 +368,6 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/PolandNotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3146">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/RecursionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/Queue8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/recursion/MiGong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/linkedlist/DoubleLinkedListDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/linkedlist/Josepfu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/linkedlist/SingleLinkedListDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2266">
-          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/ShellSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="92" column="51" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/stack/ArrayStackArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/queue/ArrayQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/queue/CircleArrayQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="112" column="44" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sparsearray/SparseArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/SelectSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/RadixSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/search/SeqSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/InsertSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/sort/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1030">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kedacom/search/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1488#1497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

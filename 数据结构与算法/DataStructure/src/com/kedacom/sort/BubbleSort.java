@@ -1,5 +1,9 @@
 package com.kedacom.sort;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -10,10 +14,14 @@ public class BubbleSort {
 
         // 测试冒泡排序的速度O(n^2), 创建100000个数据进行测试
         int[] arr = new int[100000];
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 10000000);
         }
+
         Date date = new Date();
+
+
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String date1Str = simpleDateFormat.format(date);
         System.out.println("date1Str = " + date1Str);

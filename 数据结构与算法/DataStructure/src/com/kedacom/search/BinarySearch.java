@@ -7,9 +7,9 @@ public class BinarySearch {
     public static void main(String[] args) {
         // 使用二分查询的前提是, 该数组是有序的
         int[] arr = {1, 8, 10, 89, 90, 1000, 1000, 1000, 1234};
-//        int resIndex = binarySearching(arr, 0, arr.length, 88);
-        List<Integer> resIndexList = binaryListSearching(arr, 0, arr.length, 1000);
-        System.out.println("resIndex = " + resIndexList);
+        int resIndex = binarySearching(arr, 0, arr.length, 10);
+//        List<Integer> resIndexList = binaryListSearching(arr, 0, arr.length, 1000);
+        System.out.println("resIndex = " + resIndex);
     }
 
     private static int binarySearching(int[] arr, int left, int right, int findVal) {

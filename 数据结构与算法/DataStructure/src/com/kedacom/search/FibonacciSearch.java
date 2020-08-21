@@ -8,7 +8,10 @@ public class FibonacciSearch {
         System.out.println("findIndex = " + fibSearch(arr, 1000));
     }
 
-    // 非递归得到一个斐波那契数列
+
+    /**
+     * @return 非递归得到一个斐波那契数列
+     */
     public static int[] fib() {
         int[] f = new int[20];
         f[0] = 1;
@@ -19,16 +22,25 @@ public class FibonacciSearch {
         return f;
     }
 
-    // 编写斐波那契查找算法
+
+    /**
+     * 编写斐波那契查找算法
+     * @param arr 数组
+     * @param key 查找的key
+     * @return 下标
+     */
     public static int fibSearch(int[] arr, int key) {
         int lower = 0;
         // 使用非递归编写算法
         int high = arr.length - 1;
-        int k = 0; // 表示斐波那契额数值的下标
+        // 表s斐波那契额数值的下标
+        int k = 0;
         int mid = 0;
         int[] f = fib();
 
-        while (high > f[k] - 1) k++;
+        while (high > f[k] - 1) {
+            k++;
+        }
         // 因为 f[k] 值可能大于a的长度,因此我们需要使用Arrays类,构造一个新的数组,并指向a[]
         int[] temp = Arrays.copyOf(arr, 10);
 

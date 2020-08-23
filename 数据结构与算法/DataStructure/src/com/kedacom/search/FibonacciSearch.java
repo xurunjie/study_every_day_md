@@ -1,5 +1,7 @@
 package com.kedacom.search;
 
+import jdk.nashorn.internal.objects.annotations.Where;
+
 import java.util.Arrays;
 
 public class FibonacciSearch {
@@ -42,7 +44,7 @@ public class FibonacciSearch {
             k++;
         }
         // 因为 f[k] 值可能大于a的长度,因此我们需要使用Arrays类,构造一个新的数组,并指向a[]
-        int[] temp = Arrays.copyOf(arr, 10);
+        int[] temp = Arrays.copyOf(arr, f[k]);
 
         for (int i = high + 1; i < temp.length; i++) {
             temp[i] = arr[high];

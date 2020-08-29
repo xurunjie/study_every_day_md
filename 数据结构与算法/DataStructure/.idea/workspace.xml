@@ -8,10 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8251b17e-5c4f-482a-a758-57fb1c024234" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/kedacom/tree/BinaryTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kedacom/tree/ArrBinaryTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kedacom/tree/threadedbinarytree/ThreadedBinaryTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/search/FibonacciSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/search/FibonacciSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kedacom/search/FibonacciSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kedacom/search/FibonacciSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../算法.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,13 +70,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.BinaryTreeDemo">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.search.BinarySearch" />
+  <component name="RunManager" selected="Application.ThreadedBinaryTreeDemo">
+    <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.tree.ArrBinaryTreeDemo" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.search.*" />
+          <option name="PATTERN" value="com.kedacom.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.sort.SelectSort" />
+    <configuration name="ThreadedBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.tree.threadedbinarytree.ThreadedBinaryTreeDemo" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.sort.*" />
+          <option name="PATTERN" value="com.kedacom.tree.threadedbinarytree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,20 +136,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.BinarySearch" />
-      <item itemvalue="Application.SelectSort" />
       <item itemvalue="Application.InsertValSearch" />
       <item itemvalue="Application.FibonacciSearch" />
       <item itemvalue="Application.BinaryTreeDemo" />
+      <item itemvalue="Application.ArrBinaryTreeDemo" />
+      <item itemvalue="Application.ThreadedBinaryTreeDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadedBinaryTreeDemo" />
+        <item itemvalue="Application.ArrBinaryTreeDemo" />
         <item itemvalue="Application.BinaryTreeDemo" />
         <item itemvalue="Application.FibonacciSearch" />
         <item itemvalue="Application.InsertValSearch" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.SelectSort" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +216,9 @@
       <workItem from="1597907091881" duration="77000" />
       <workItem from="1597907197048" duration="7085000" />
       <workItem from="1598186151046" duration="1533000" />
-      <workItem from="1598195547935" duration="1485000" />
+      <workItem from="1598195547935" duration="1894000" />
+      <workItem from="1598450973280" duration="1923000" />
+      <workItem from="1598541840222" duration="2381000" />
     </task>
     <servers />
   </component>
@@ -232,14 +246,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597821677602" />
-    <state x="748" y="1253" key="#com.intellij.ide.util.MemberChooser" timestamp="1598187074689">
+    <state x="748" y="1253" key="#com.intellij.ide.util.MemberChooser" timestamp="1598543006213">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
-    <state x="748" y="1253" key="#com.intellij.ide.util.MemberChooser/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598187074689" />
+    <state x="748" y="1253" key="#com.intellij.ide.util.MemberChooser/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598543006213" />
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597821166973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597821166973" />
+    <state x="603" y="1201" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1598451811244">
+      <screen x="215" y="1080" width="1440" height="900" />
+    </state>
+    <state x="603" y="1201" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598451811244" />
+    <state x="623" y="1273" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598451057756">
+      <screen x="215" y="1080" width="1440" height="900" />
+    </state>
+    <state x="623" y="1273" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598451057756" />
     <state width="405" height="466" key="DebuggerActiveHint" timestamp="1597921013839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -248,54 +270,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597822026802" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1598197169302">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1598544297780">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
     <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598197169302" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1598197169300">
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598544201671" />
+    <state width="1398" height="284" key="GridCell.Tab.0.bottom/215.1080.1440.900/0.23.1920.1057@215.1080.1440.900" timestamp="1598544297780" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1598544297777">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
     <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598197169300" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1598197169298">
+    <state width="1398" height="284" key="GridCell.Tab.0.center/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598544201670" />
+    <state width="1398" height="284" key="GridCell.Tab.0.center/215.1080.1440.900/0.23.1920.1057@215.1080.1440.900" timestamp="1598544297777" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1598544297777">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
     <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598197169298" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1598197169301">
+    <state width="1398" height="284" key="GridCell.Tab.0.left/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598544201667" />
+    <state width="1398" height="284" key="GridCell.Tab.0.left/215.1080.1440.900/0.23.1920.1057@215.1080.1440.900" timestamp="1598544297777" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1598544297778">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523255" />
     <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598197169301" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1598195527309">
+    <state width="1398" height="284" key="GridCell.Tab.0.right/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598544201671" />
+    <state width="1398" height="284" key="GridCell.Tab.0.right/215.1080.1440.900/0.23.1920.1057@215.1080.1440.900" timestamp="1598544297778" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1598460628199">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
     <state width="1877" height="294" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104942" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598195527309" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1598195527308">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598460628199" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1598460628198">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
     <state width="1877" height="294" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104942" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598195527308" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1598195527308">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598460628198" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1598460628198">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
     <state width="1877" height="294" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104941" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598195527308" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1598195527309">
+    <state width="1398" height="304" key="GridCell.Tab.1.left/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598460628198" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1598460628199">
       <screen x="215" y="1080" width="1440" height="900" />
     </state>
     <state width="1877" height="294" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597921523256" />
     <state width="1877" height="294" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1440.860@1920.0.1440.860" timestamp="1597889104942" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598195527309" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598460628199" />
     <state x="540" y="254" key="IDE.errors.dialog" timestamp="1597826655103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -58,6 +58,10 @@ public class HuffmanTree {
 class Node implements Comparable<Node> {
     int value;
     /**
+     * 展示字节
+     */
+    char c;
+    /**
      * 左子节点
      */
     Node left;

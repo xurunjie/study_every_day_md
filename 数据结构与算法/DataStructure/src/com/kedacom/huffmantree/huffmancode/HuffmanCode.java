@@ -1,5 +1,7 @@
 package com.kedacom.huffmantree.huffmancode;
 
+import com.sun.org.glassfish.external.statistics.Stats;
+
 import java.util.*;
 
 /**
@@ -16,13 +18,95 @@ public class HuffmanCode {
     public static void main(String[] args) {
         String str = "i like like like java do you like a java";
         byte[] contentBytes = str.getBytes();
-        System.out.println("contentBytes.length = " + contentBytes.length);
-        List<Node> nodes = getNodes(contentBytes);
-        System.out.println("nodes = " + nodes);
-        // 创建二叉树
-        Node node = createHuffmanTree(nodes);
+        byte[] huffmanCodeBytes = huffmanZip(contentBytes);
+        System.out.println("huffmanCodeBytes = " + Arrays.toString(huffmanCodeBytes));
+        System.out.println("huffmanCodeBytes.length = " + huffmanCodeBytes.length);
+        System.out.println(byteToBitString((byte) -1));
+//        System.out.println("contentBytes.length = " + contentBytes.length);
+//        List<Node> nodes = getNodes(contentBytes);
+//        System.out.println("nodes = " + nodes);
+//        // 创建二叉树
+//        Node node = createHuffmanTree(nodes);
+//        // 前序遍历
+//        preOrder(node);
+//        // 获取压缩的数值
+//        Map<Byte, String> huffmanCodes = getCodes(node);
+//        System.out.println("生成的 huffman 编码表是\n" + huffmanCodes);
+//
+//        byte[] huffmanCodeBytes = zip(contentBytes, huffmanCodes);
+//        System.out.println("huffmanCodeBytes = " + Arrays.toString(huffmanCodeBytes));
 
-        node.preOrder();
+        // 发送 huffmanCodeBytes 数组
+
+    }
+
+    /**
+     * 完成数据的解压
+     * 思路
+     * @param b 二进
+     * @return
+     */
+    private static String byteToBitString(byte b){
+        int temp = b;
+        String str = Integer.toBinaryString(temp);
+        System.out.println("str = " + str);
+        return str;
+    }
+
+
+    /**
+     * @param bytes 原始的在字符串对应的字节数组
+     * @return 经过赫夫曼处理后的字节数组 (压缩后的数组)
+     */
+    private static byte[] huffmanZip(byte[] bytes) {
+        List<Node> nodes = getNodes(bytes);
+        // 创建 huffman 编码
+        Node huffmanTree = createHuffmanTree(nodes);
+        // 生成 huffman 编码
+        Map<Byte, String> huffmanCodes = getCodes(huffmanTree);
+        // 根据生成的赫夫曼编码压缩,得到压缩后的赫夫曼编码字节数组
+
+        return zip(bytes, huffmanCodes);
+    }
+
+    /**
+     * 编写一个方法,将字符串对应的 byte[], 通过生成的赫夫曼编码表,返回一个赫夫曼编码 压缩后的 byte[]
+     *
+     * @param bytes        这是原始的字符串对应的 byte[]
+     * @param huffmanCodes 生成的赫夫曼编码 map
+     * @return 返回赫夫曼编码处理后的 byte[]
+     * 举例: string content = "i like like like java do you like a java";=> byte[] contentBytes = content.getBytes()
+     * 返回的是 字符内穿 "1010100... ... ... ..."
+     * 对应的 Byte[] huffmanCodeBytes , 即 8 位对应一个 byte,放入到 huffmanCodeBytes
+     * huffmanCodeBytes[0] = 10101000(补码) => byte [推导 10101000 => 1010100 - 1 => 10100111(反码) => 11011000 ]
+     */
+    private static byte[] zip(byte[] bytes, Map<Byte, String> huffmanCodes) {
+        // 1. 利用 huffmanCodeBytes 将 bytes 转成赫夫曼编码对应的字符串
+        StringBuilder builder = new StringBuilder();
+        // 遍历 bytes 数组
+        for (byte b : bytes) {
+            builder.append(huffmanCodes.get(b));
+        }
+        // 获取数组长度
+        int len = (builder.length() + 7) / 8;
+        // 创建 存储压缩后的 byte 数组
+        byte[] huffmanCodeBytes = new byte[len];
+
+        int index = 0;
+        // 每 8 位对应一个 byte 字节
+        for (int i = 0; i < builder.length(); i += 8) {
+            String strByte;
+            if (i + 8 > builder.length()) {
+                // 条件成立 不够 8 位
+                strByte = builder.substring(i);
+            }else {
+                strByte = builder.substring(i, i + 8);
+            }
+            // 将 strByte 转成一个 byte 数,放入到
+            huffmanCodeBytes[index++] = (byte) Integer.parseInt(strByte, 2);
+
+        }
+        return huffmanCodeBytes;
     }
 
     /**
@@ -38,14 +122,52 @@ public class HuffmanCode {
      */
     static StringBuilder stringBuilder = new StringBuilder();
 
+    /**
+     * @param node 赫夫曼树的根节点
+     * @return huffman-code 赫夫曼编码表
+     */
+    private static Map<Byte, String> getCodes(Node node) {
+        if (node == null) {
+            return null;
+        }
+        // 处理左子树
+        getCodes(node.left, "0", stringBuilder);
+        // 处理右子树
+        getCodes(node.right, "1", stringBuilder);
+        return huffmanCodes;
+    }
+
+    /**
+     * 功能：将传入的node节点的所有节点哈夫曼编码的到，并放入huffmanCodes集合中
+     *
+     * @param node          传入节点
+     * @param code          路径： 左子节点是0 右子节点是 1
+     * @param stringBuilder 是用于拼接路径的
+     */
+    private static void getCodes(Node node, String code, StringBuilder stringBuilder) {
+        StringBuilder builder = new StringBuilder(stringBuilder);
+        // 将 code 加入 builder
+        builder.append(code);
+        if (node != null) {
+            if (node.data == null) {
+                getCodes(node.left, "0", builder);
+                getCodes(node.right, "1", builder);
+            } else {
+                // 说明找到叶子节点的最后
+                huffmanCodes.put(node.data, builder.toString());
+            }
+        }
+
+    }
+
 
     /**
      * 前序遍历
      */
-    private static void preOrder(Node root){
+    private static void preOrder(Node root) {
         if (root != null) {
             root.preOrder();
-        }else {
+        } else {
             System.out.println("根节点为空~~~");
         }
     }

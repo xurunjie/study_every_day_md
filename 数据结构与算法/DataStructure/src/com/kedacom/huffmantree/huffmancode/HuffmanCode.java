@@ -43,6 +43,8 @@ public class HuffmanCode {
     /**
      * 完成数据的解压
      * 思路
+     *     1. 将huffmanCodeBytes -> [ -88
+     *
      * @param b 二进
      * @return
      */

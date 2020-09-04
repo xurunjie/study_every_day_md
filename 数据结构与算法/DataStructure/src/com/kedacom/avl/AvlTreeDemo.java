@@ -5,13 +5,17 @@ package com.kedacom.avl;
  */
 public class AvlTreeDemo {
     public static void main(String[] args) {
-        int[] arr = {4, 3, 6, 5, 7, 8};
+//        int[] arr = {4, 3, 6, 5, 7, 8};
+//        int[] arr = {10, 12, 8, 9, 7, 6};
+        int[] arr = {12, 13, 7, 6, 8, 9};
         // 创建一个AVL tree对象
         AvlTree avlTree = new AvlTree();
         //添加节点
         for (int j : arr) {
             avlTree.add(new Node(j));
         }
+        avlTree.add(new Node(10));
+        avlTree.add(new Node(11));
         System.out.println("中序遍历");
         avlTree.infixOrder();
         System.out.println("avlTree.getRoot().height() = " + avlTree.getRoot().height());
@@ -39,6 +43,8 @@ class AvlTree {
     public void infixOrder() {
         if (root != null) {
             root.infixOrder();
+            System.out.println("--------------");
+            System.out.println(root);
         } else {
             System.out.println("root 节点为空");
         }
@@ -191,6 +197,16 @@ class Node {
 
     }
 
+
+    private void rightRotate() {
+        Node newNode = new Node(value);
+        newNode.right = right;
+        newNode.left = left.right;
+        value = left.value;
+        left = left.left;
+        right = newNode;
+    }
+
     @Override
     public String toString() {
         return "Node{" +
@@ -220,10 +236,32 @@ class Node {
                 this.right.add(node);
             }
         }
-        // 当天价玩一个节点后, 如果:(右子树的高度 - 左子树的高度) > 1, 左旋转
+        // 当添加完一个节点后, 如果:(右子树的高度 - 左子树的高度) > 1, 左旋转
         if (rightHeight() - leftHeight() > 1) {
-            leftRotate();
+            // 如果它的右子树的左子树的高度大鱼它的右子树的右子树的高度
+            if (right != null && right.leftHeight() > right.rightHeight()) {
+                // 先对右子节点进行右旋转
+                right.rightRotate();
+                // 然后在对当前节点进行左旋转
+                leftRotate();
+            } else {
+                leftRotate();
+            }
+            return;
         }
+        // 当添加完一个节点后
+        if (leftHeight() - rightHeight() > 1) {
+            // 如果它的左子树的右子树高度大于它的左子树的高度
+            if (left != null && left.rightHeight() > left.leftHeight()) {
+                // 先对当前节点的左节点(左子树) -> 坐旋转
+                left.leftRotate();
+                rightRotate();
+            } else {
+                // 直接进行有旋转即可
+                rightRotate();
+            }
+        }
+
     }
 
     public void infixOrder() {

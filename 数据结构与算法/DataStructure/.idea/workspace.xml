@@ -8,11 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8251b17e-5c4f-482a-a758-57fb1c024234" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/kedacom/graph/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/avl/AvlTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/avl/AvlTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/avl/AvlTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/avl/AvlTreeDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/avl/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructure/com/kedacom/avl/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kedacom/avl/AvlTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kedacom/avl/AvlTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../算法.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +71,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.AvlTreeDemo">
+  <component name="RunManager" selected="Application.Graph">
     <configuration name="AvlTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kedacom.avl.AvlTreeDemo" />
       <module name="DataStructure" />
@@ -88,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySortTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kedacom.binarysorttree.BinarySortTreeDemo" />
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kedacom.graph.Graph" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kedacom.binarysorttree.*" />
+          <option name="PATTERN" value="com.kedacom.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,31 +137,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.AvlTreeDemo" />
-      <item itemvalue="Application.BinarySortTreeDemo" />
       <item itemvalue="Application.HuffmanCode" />
       <item itemvalue="Application.HuffmanTree" />
       <item itemvalue="Application.ThreadedBinaryTreeDemo" />
+      <item itemvalue="Application.Graph" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Graph" />
         <item itemvalue="Application.AvlTreeDemo" />
         <item itemvalue="Application.ThreadedBinaryTreeDemo" />
         <item itemvalue="Application.HuffmanTree" />
         <item itemvalue="Application.HuffmanCode" />
-        <item itemvalue="Application.BinarySortTreeDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -236,6 +235,7 @@
       <workItem from="1599182671210" duration="18053000" />
       <workItem from="1599227198633" duration="3031000" />
       <workItem from="1599237790004" duration="4133000" />
+      <workItem from="1599443945644" duration="2383000" />
     </task>
     <servers />
   </component>
@@ -264,10 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1597821677602" />
-    <state x="711" y="200" key="#com.intellij.ide.util.MemberChooser" timestamp="1599202957174">
+    <state x="711" y="200" key="#com.intellij.ide.util.MemberChooser" timestamp="1599448892869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="711" y="200" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1599202957174" />
+    <state x="711" y="200" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1599448892869" />
     <state x="748" y="1253" key="#com.intellij.ide.util.MemberChooser/215.1080.1440.900/0.0.1920.1080@215.1080.1440.900" timestamp="1598543006213" />
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1597821166973">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -452,7 +452,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/kedacom/avl/AvlTreeDemo.java</url>
-          <line>16</line>
+          <line>20</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>

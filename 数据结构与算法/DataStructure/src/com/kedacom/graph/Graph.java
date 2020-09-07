@@ -31,8 +31,9 @@ public class Graph {
 
     public static void main(String[] args) {
         // 存在5个顶点
-        int n = 5;
-        String[] vertexValue = {"A", "B", "C", "D", "E"};
+        int n = 8;
+//        String[] vertexValue = {"A", "B", "C", "D", "E"};
+        String[] vertexValue = {"1", "2", "3", "4", "5", "6", "7", "8"};
         // 创建图对象
         Graph graph = new Graph(n);
         // 循环的添加顶点
@@ -40,11 +41,16 @@ public class Graph {
             graph.insertVertex(vertex);
         }
 
-        // 添加边
-        graph.insertEdge(0, 1, 1);
-        graph.insertEdge(0, 2, 1);
-        graph.insertEdge(1, 3, 1);
-        graph.insertEdge(1, 4, 1);
+        // 添加边\
+        graph.insertEdge(0,1,1);
+        graph.insertEdge(0,2,1);
+        graph.insertEdge(1,3,1);
+        graph.insertEdge(1,4,1);
+        graph.insertEdge(3,7,1);
+        graph.insertEdge(4,7,1);
+        graph.insertEdge(2,5,1);
+        graph.insertEdge(2,6,1);
+        graph.insertEdge(5,6,1);
         // 显示邻接举证
         graph.showGraph();
         // 深度遍历
@@ -53,7 +59,7 @@ public class Graph {
 
 
         // 广度优先
-        System.out.println("广度遍历 -> ");
+        System.out.println("\n广度遍历 -> ");
         graph.bfs();
     }
 
@@ -160,7 +166,7 @@ public class Graph {
             while (w != -1) {
                 // 是否被访问
                 if (!isVisited[w]) {
-                    System.out.println(getValueByIndex(w) + "->");
+                    System.out.print(getValueByIndex(w) + "->");
                     // 标记已访问
                     isVisited[w] = true;
                     // 入队列
@@ -177,7 +183,7 @@ public class Graph {
      * 遍历所有节点进行广度优先搜索
      */
     private void bfs(){
-        isVisited = new boolean[5];
+        isVisited = new boolean[vertexList.size()];
         // bfs遍历
         for (int i = 0; i < getNumOfVertex(); i++) {
             if (!isVisited[i]) {
@@ -191,7 +197,7 @@ public class Graph {
      * 遍历所有节点进行dfs
      */
     private void dfs() {
-        isVisited = new boolean[5];
+        isVisited = new boolean[vertexList.size()];
         // 遍历所有节点进行dfs
         for (int i = 0; i < getNumOfVertex(); i++) {
             if (!isVisited[i]) {

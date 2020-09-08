@@ -1,4 +1,4 @@
-package com.kmp;
+package com.kedacom.kmp;
 
 import java.util.Arrays;
 

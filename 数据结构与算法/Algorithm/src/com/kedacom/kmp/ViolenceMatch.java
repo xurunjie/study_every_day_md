@@ -1,4 +1,4 @@
-package com.kmp;
+package com.kedacom.kmp;
 
 /**
  * 暴力破解法

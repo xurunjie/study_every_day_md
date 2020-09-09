@@ -1,11 +1,13 @@
 package com.kedacom.greedy;
 
-import java.security.Key;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
+/**
+ * @author python
+ */
 public class GreedyAlgorithm {
     public static void main(String[] args) {
         // 创建广播电台
@@ -55,7 +57,7 @@ public class GreedyAlgorithm {
         HashSet<String> tempSet = new HashSet<>();
 
 
-        String maxKey = null;
+        String maxKey;
         // 定义给 maxKey, 保存在依次遍历中,能够覆盖最大地区的电台
         // 如果 maxKey 不为 null,则会加入到 selects
         while (allAreas.size() != 0) {

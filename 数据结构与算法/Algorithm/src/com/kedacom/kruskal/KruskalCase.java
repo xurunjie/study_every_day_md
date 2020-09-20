@@ -43,7 +43,7 @@ public class KruskalCase {
 
         // 创建克鲁斯卡尔对象实例
         KruskalCase kruskalCase = new KruskalCase(vertex, matrix);
-        // 输出
+        // 克鲁斯卡尔算法
         kruskalCase.kruskal();
     }
 
@@ -148,7 +148,10 @@ public class KruskalCase {
         return edgeData;
     }
 
-    public void kruskal(){
+    /**
+     * 克鲁斯卡尔算法
+     */
+    public void kruskal() {
         // 表示最后结果数组索引
         int index = 0;
         // 用于保存已有最小生成树中的每个顶点在最小生成数中的终点
@@ -162,11 +165,8 @@ public class KruskalCase {
 
         // 按照边的权值大小进行排序
         sortEdges(edges);
-        for (int i = 0; i < edges.length; i++) {
-            System.out.println("edges = " + edges[i]);
-        }
 
-        // 遍历edges数组, 将边添加到最小生成树中,判断是准备加入的边是否形成了回路, 如果没有,就加入rets,否则不能加入
+        // 遍历edges数组, 将边添加到最小生成树中,判断是准备加入的边是否形成了回路, 如果没有,就加入results,否则不能加入
         for (int i = 0; i < edgeNum; i++) {
             // 获取到第i条边的第一个顶点(起点)
             int p1 = getPosition(edges[i].start);

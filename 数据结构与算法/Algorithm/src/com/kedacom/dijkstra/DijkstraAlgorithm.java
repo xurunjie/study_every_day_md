@@ -1,5 +1,6 @@
 package com.kedacom.dijkstra;
 
+import java.io.File;
 import java.util.Arrays;
 
 /**
@@ -25,7 +26,9 @@ public class DijkstraAlgorithm {
         // 测试
         graph.showGraph();
         // 迪杰斯特拉算法
-        graph.dsj(6);
+        int index = 6;
+        graph.dsj(index);
+
     }
 }
 

@@ -2,7 +2,11 @@ package com.kedacom.service;
 
 import com.kedacom.dao.BookDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import javax.inject.Inject;
 
 /**
  * @author python
@@ -10,7 +14,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class BookService {
 
-    @Autowired
+//    @Qualifier("bookDao2")
+//    @Autowired
+//    @Resource
+    @Inject
     private BookDao bookDao;
 
     public void print(){

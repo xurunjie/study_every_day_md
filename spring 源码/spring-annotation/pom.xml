@@ -37,7 +37,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aspects</artifactId>
-      <version>5.2.0.BUILD-SNAPSHOT</version>
+      <version>5.0.2.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>

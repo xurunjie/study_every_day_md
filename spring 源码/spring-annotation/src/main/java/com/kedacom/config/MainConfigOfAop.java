@@ -1,6 +1,10 @@
 package com.kedacom.config;
 
+import com.kedacom.aop.LogAspects;
+import com.kedacom.aop.MathCalculator;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * @author python
@@ -15,7 +19,32 @@ import org.springframework.context.annotation.Configuration;
  *          返回通知 :  logReturn -> 在目标方法(div)正常返回之后运行
  *          异常通知 :  logException -> 在目标方法(div)正常返回之后运行
  *          环绕通知 :  动态代理, 手动推进目标方法(joinPoint.procced())
+ * 4. 给切面类标注方法标注何时何地运行(通知注解)
+ * 5. 将切面类和业务逻辑类(目标方法所在类)都加入到容器中
+ * 6. 必须告诉 spring哪个类是切面类(给切面类加上 Aspect 注解)
+ *      -> @Aspect 注解到所在类上
+ * 7. 给配置类加@EnableAspectJAutoProxy[开启基于注解的 aop 模式]
+ *      在 spring 中很多@EnableXXX -> 代表开启某项功能
  */
+@EnableAspectJAutoProxy
 @Configuration
 public class MainConfigOfAop {
+
+    /**
+     * 业务逻辑类加入到容器中
+     * @return MathCalculator Object
+     */
+    @Bean
+    public MathCalculator calculator(){
+        return new MathCalculator();
+    }
+
+    /**
+     * 切面到容器中
+     * @return LogAspects Object
+     */
+    @Bean
+    public LogAspects logAspects(){
+        return new LogAspects();
+    }
 }

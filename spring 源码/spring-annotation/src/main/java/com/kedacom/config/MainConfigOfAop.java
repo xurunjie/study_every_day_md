@@ -5,6 +5,7 @@ import com.kedacom.aop.MathCalculator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.Import;
 
 /**
  * @author python
@@ -25,6 +26,29 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  *      -> @Aspect 注解到所在类上
  * 7. 给配置类加@EnableAspectJAutoProxy[开启基于注解的 aop 模式]
  *      在 spring 中很多@EnableXXX -> 代表开启某项功能
+ *
+ * 三步走:
+ *      1. 将业务逻辑组件和切面类加入到容器中,告诉 spring 哪个是切面类(@Aspects)
+ *      2. 在切面类上每一个通知方法上标注通知注解, 告诉 spring 何时何地运行(切入点表达式)
+ *      3. 开启基于注解的 aop 模式 : @EnableAspectJAutoProxy
+ * AOP 原理 : [看给容器中注册了什么组件,这个组件什么时候工作,这个组件的功能是什么]
+ *      @see EnableAspectJAutoProxy
+ * 1. @EnableAspectJAutoProxy是什么
+ *      @see Import (AspectJAutoProxyRegistrar.class) : 给容器中导入 AspectJAutoProxyRegistrar : 实现于ImportBeanDefinitionRegistrar接口
+ *          利用AspectJAutoProxyRegistrar自定义给组件注册 bean
+ *              internalAutoProxyCreator=AnnotationAwareAspectJAutoProxyCreator
+ *          给容器中注册一个AnnotationAwareAspectJAutoProxyCreator
+ * 2. AnnotationAwareAspectJAutoProxyCreator:
+ *      -> extend AspectJAwareAdvisorAutoProxyCreator
+ *          -> extend AbstractAdvisorAutoProxyCreator
+ *              -> extend AbstractAutoProxyCreator
+ *                  -> extend ProxyProcessorSupport
+ *                      -> implements SmartInstantiationAwareBeanPostProcessor, BeanFactoryAware
+ *                      关注后置处理器(在 bean 初始化完成前后做事情), 自动装配 BeanFactory
+ *
+ *
+ *
+ *
  */
 @EnableAspectJAutoProxy
 @Configuration

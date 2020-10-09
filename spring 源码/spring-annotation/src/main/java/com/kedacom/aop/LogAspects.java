@@ -34,7 +34,7 @@ public class LogAspects {
 
     @AfterThrowing(value = "pointCut()",throwing = "exception")
     public void logException(JoinPoint joinPoint, Exception exception) {
-        System.out.println("joinPoint.getArgs() = " + Arrays.toString(joinPoint.getArgs()));
+        System.out.println("joinPoint.getArgs() = " + Arrays.toString(joinPoint.getArgs()) + "exception = " + exception.getMessage());
         System.out.println("除法异常 ... 异常信息 ...");
     }
 }

@@ -126,7 +126,8 @@ import org.springframework.core.Ordered;
  * 2)、创建对象
  *      postProcessAfterInitialization:
  *          return wrapIfNecessary(bean, beanName, cacheKey); // 包装如果需要的情况下
- *     1、获取当前bean的所有增强器
+ *     1、获取当前bean的所有增强器(通知方法)
+ *          找到能在当前bean使用的增强器(找哪些通知方法是需要切入当前bean的方法)
  */
 @EnableAspectJAutoProxy
 @Configuration

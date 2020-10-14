@@ -126,8 +126,27 @@ import org.springframework.core.Ordered;
  * 2)、创建对象
  *      postProcessAfterInitialization:
  *          return wrapIfNecessary(bean, beanName, cacheKey); // 包装如果需要的情况下
- *     1、获取当前bean的所有增强器(通知方法)
- *          找到能在当前bean使用的增强器(找哪些通知方法是需要切入当前bean的方法)
+ *     1)、获取当前bean的所有增强器(通知方法)
+ *          1)、找到候选的所有的增强器(找哪些通知方法是需要切入当前bean的方法)
+ *          2)、获取到能在bean使用的增强器
+ *          3)、给增强器排序
+ *     2)、保存当前bean在advisedBeans中;
+ *     3)、如果当前bean需要增强, 创建当前bean的代理对象
+ *          1)、获取所有增强器(通知方法)
+ *          2)、保存到proxyFactory
+ *          3)、创建代理对象: Spring自动决定
+ *              new JdkDynamicAopProxy(config);jdk动态代理
+ *              ObjenesisCglibAopProxy(config);cglib的动态代理
+ *                  -> 原理是
+ *                      -> 如果我们代理的接口有实现的接口的时候jdk能创建动态代理的jdk创建
+ *                      -> 反之如果没有实现接口的则使用cglib创建动态代理
+ *          4)、给容器中返回当前的组件使用cglib增强了的代理对象
+ *          5)、以后容器中获取到的就是这个组建的代理对象,执行目标方法的时候,代理对象就会执行通知方法的流程
+ *
+ *  3)、目标方法执行
+ *
+ *
+ *
  */
 @EnableAspectJAutoProxy
 @Configuration

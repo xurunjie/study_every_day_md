@@ -6,6 +6,9 @@ import com.kedacom.tx.TxConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/**
+ * @author python
+ */
 public class IOCTest_Tx {
     @Test
     public void test01(){

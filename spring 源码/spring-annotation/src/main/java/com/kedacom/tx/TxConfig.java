@@ -43,8 +43,17 @@ import java.beans.PropertyVetoException;
  *      利用后置处理器机制在对象创建以后,包装对象,返回一个代理对象(增强器),代理对象执行方法利用拦截器链执行调用;
  *  3)、ProxyTransactionManagementConfiguration 做了什么?
  *          1、给容器中注册事务增强器
- *              事务增强器
- *
+ *              1）、事务增强器要用事务注解的信息，AnnotationTransactionAttributeSource解析式无注解
+ *              2）、事务拦截器：
+ *                  transactionInterceptor； 保存了事务的属性信息，事务管理器
+ *                  他是一个MethodInterceptor
+ *                  他在目标方法执行的时候；
+ *                      执行拦截器链
+ *                      事务拦截器：
+ *                          1）、先获取事务属性
+ *                          2）、再获取PlatformTransactionManager，如果实现没有添加指定的PlatformTransactionManager
+ *                              最终会从容器中按照类型获取一个PlatformTransactionManager
+ *                          3）、
  *
  * @author python
  */
@@ -70,7 +79,7 @@ public class TxConfig {
     @Bean("dataSource")
     public DataSource dataSourceWindows() throws PropertyVetoException {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
-        dataSource.setJdbcUrl("jdbc:mysql://172.16.185.181:3309/luban");
+        dataSource.setJdbcUrl("jdbc:mysql://172.16.185.183:3309/luban");
         dataSource.setUser("kedacom");
         dataSource.setPassword("Keda!Mysql_36");
         dataSource.setDriverClass("com.mysql.jdbc.Driver");

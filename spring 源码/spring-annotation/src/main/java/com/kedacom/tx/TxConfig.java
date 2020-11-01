@@ -53,7 +53,9 @@ import java.beans.PropertyVetoException;
  *                          1）、先获取事务属性
  *                          2）、再获取PlatformTransactionManager，如果实现没有添加指定的PlatformTransactionManager
  *                              最终会从容器中按照类型获取一个PlatformTransactionManager
- *                          3）、
+ *                          3）、执行目标方法
+ *                              如果异常，获取事物管理器，利用事物管理器回滚操作
+ *                              如果正常,利用事务管理器, 提交
  *
  * @author python
  */

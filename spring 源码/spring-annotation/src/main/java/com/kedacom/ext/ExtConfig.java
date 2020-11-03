@@ -2,6 +2,7 @@ package com.kedacom.ext;
 
 import com.kedacom.bean.Blue;
 import com.kedacom.bean.Red;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -76,11 +77,21 @@ import org.springframework.stereotype.Component;
  *          从容其中拿到所有的监听器,把他们注册到applicationEventMulticaster中
  *          // 将 listener 注册到ApplicationEventMulticaster中
  *          String[] listenerBeanNames = getBeanNamesForType(ApplicationListener.class, true, false);
+ * SmartInitializingSingleton原理：
+ *      1）、IOC容器创建对象并refresh();
+ *      2)、finishBeanFactoryInitialization(BeanFactory);初始化剩下的单实例bean
+ *          1）、先创建所有的单实例bean;getBean()
+ *          2)、获取所有创建好的单实例bean，判断是否是SmartInitializingSingleton类型；
+ *              如果是调用smartSingleton.afterSingletonsInstantiated();
  *
  * @author python
  */
 @Configuration
 @ComponentScan("com.kedacom.ext")
-@Import({Red.class, Blue.class})
+@Import({Red.class})
 public class ExtConfig {
+    @Bean
+    public Blue blue(){
+        return new Blue();
+    }
 }
